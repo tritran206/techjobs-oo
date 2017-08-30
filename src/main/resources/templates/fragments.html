@@ -28,5 +28,30 @@
         </div>
     </div>
 
+    <div th:fragment="display-jobs">
+        <table class="job-listing">
+            <tr>
+                <td><span>Name</span></td>
+                <td><a th:text="${name}"></a></td>
+            </tr>
+            <tr>
+                <td><span>Employer</span></td>
+                <td><a th:text="${employer}"></a></td>
+            </tr>
+            <tr>
+                <td><span>Location</span></td>
+                <td><a th:text="${location}"></a></td>
+            </tr>
+            <tr>
+                <td><span>Position Type</span></td>
+                <td><a th:text="${positionType}"></a></td>
+            </tr>
+            <tr>
+                <td><span>Core Competency</span></td>
+                <td><a th:text="${coreCompetency}"></a></td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 </html>
