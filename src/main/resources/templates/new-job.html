@@ -23,6 +23,7 @@
                         th:value="${employer.id}"
                         th:text="${employer.value}"></option>
             </select>
+            <div th:errors="*{employers}"></div>
         </div>
 
         <div class="form-group">
@@ -33,6 +34,7 @@
                         th:text="${location.value}">
                 </option>
             </select>
+            <div th:errors="*{locations}"></div>
         </div>
 
         <div class="form-group">
@@ -43,6 +45,7 @@
                         th:text="${coreCompetencies.value}">
                 </option>
             </select>
+            <div th:errors="*{coreCompetencies}"></div>
         </div>
 
         <div class="form-group">
@@ -53,6 +56,7 @@
                         th:text="${positionTypes.value}">
                 </option>
             </select>
+            <div th:errors="*{positionTypes}"></div>
         </div>
         <!-- TODO #5 - Create <select> dropdowns for other job fields -->
 
